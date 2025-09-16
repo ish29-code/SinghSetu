@@ -18,7 +18,7 @@ export default function BlockForm({
     e.preventDefault();
     setError("");
 
-    const res = await fetch("/api/addBlock", {
+    const res = await fetch("https://singhsetu.onrender.com/api/addBlock", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ user_id, user_email, start_time: start, end_time: end }),
