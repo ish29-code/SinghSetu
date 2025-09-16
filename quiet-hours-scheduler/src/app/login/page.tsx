@@ -32,7 +32,7 @@ export default function LoginPage() {
       if (event === "SIGNED_IN" && session?.user) {
         const user = session.user;
 
-        await fetch("/api/saveUser", {
+        await fetch("https://singhsetu.onrender.com/api/saveUser", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
