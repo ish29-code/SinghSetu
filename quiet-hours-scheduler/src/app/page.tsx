@@ -21,7 +21,7 @@ export default function HomePage() {
 
   async function loadBlocks() {
     if (!user) return;
-    const res = await fetch(`/api/blocks?user_id=${user.id}`);
+    const res = await fetch(`https://singhsetu.onrender.com/api/blocks?user_id=${user.id}`);
     if (res.ok) {
       setBlocks(await res.json());
     }
